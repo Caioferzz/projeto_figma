@@ -1,0 +1,421 @@
+:root {
+    --primary-color: #16151D;
+    --secudary-color: #B392C2;
+    --tertiary-color: #7F7A7A;
+    --quaternary-color: #E8FF8A;
+}
+
+body {
+    background-color: var(--primary-color);
+    display: flex;          /*coloca a barra e a linha lado a lado*/
+    height: 100vh;
+    width: 100vw; 
+    color: white;  
+}
+
+/* barra de ícones */
+.barra-dos-icones {
+    display: flex;
+    flex-direction: column; /*ícones empilhados*/
+    align-items: center;
+    margin-top: 90px;       /*reduz o espaço do topo*/
+}
+
+/*espaçamento do ícone de configuração*/
+.configuracao {
+    margin-top: 300px;
+}
+
+/* tamanho dos ícones */
+.barra-dos-icones img {
+    width: 70px;
+    height: 70px;
+}
+
+/* LINHA VERTICAL */
+.linha-vertical {
+    width: 2px;                /* espessura da linha */
+    height: 100vh;             /* ocupa toda a altura da janela */
+    background-color: var(--tertiary-color); /* cor branca */
+    margin-left: 10px;         /* espaço entre a barra e a linha */
+}
+
+/* topo do main */
+.filtro-topo{
+    display: flex;
+    align-items: center;
+    width: 80vw;
+}
+
+.primeiro-filtro{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: rgb(99, 98, 98);
+    margin: 40px;
+    border-radius: 25px;    
+    padding: 5px 10px 5px 15px;
+    color: white;
+}
+
+.texto-topo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+.data-topo{
+    display: flex;
+    margin-left: 50vw;
+    color: white;
+}
+
+.linha-horizontal{
+    background-color: var(--tertiary-color);
+    width: 80vw;
+    height: 2px;
+}
+.trend-grafico{
+    display: flex;
+    width: 80vw;
+    height: 29vh;
+    justify-content: space-between;
+}
+
+.titulo-trend{
+    margin-top: 10px;
+    margin-left: 30px;
+    color: white;
+}
+.filtro-do-grafico{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10vw;
+    height: 3vh;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 25px;    
+    padding: 5px 10px 5px 0px;
+    color: white;
+    gap: 10px;
+    background-color: #282727;
+}
+.roxo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secudary-color);
+    border-radius: 25px;    
+    padding: 5px 20px 5px 20px;
+    color: white;
+}
+.primeiro-grafico img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    width: 50vw;
+}
+.risk-grafico{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    height: 35vh;
+}
+.primeira-divisao{
+    display: flex;
+    margin-left: 30px;
+    flex-direction: column;
+    width: 50vw;
+}
+.titulo-risk{
+    margin-top: 10px;
+    margin-left: 30px;
+    color: white;
+}
+.classficacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 8vw;
+    height: 5vh;
+    color: white;
+}
+.color1{
+    width: 10px;
+    height: 10px;
+    background-color: #E8FF8A;
+    border-radius: 50%;
+}
+.color2{
+    width: 10px;
+    height: 10px;
+    background-color: var(--secudary-color);
+    border-radius: 50%;
+}
+.segundo-grafico{
+    display: flex;
+    gap: 50px;
+}
+.informacao-do-grafico{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.numero-risk{
+    font-size: 40px;
+}
+.porcentagem{
+    display: flex;
+    background-color: var(--quaternary-color);
+    color: black;
+    border-radius: 25px;    
+    padding: 5px 10px 5px 10px;
+    justify-content: center;
+    align-items: center;
+}
+.porcentagem-2{
+    display: flex;
+    background-color: var(--secudary-color);
+    color: black;
+    border-radius: 25px;    
+    padding: 5px 10px 5px 10px;
+    justify-content: center;
+    align-items: center;
+}
+.porcentagem img{
+    width: 35px;
+    height: 34px;
+}
+.porcentagem-2 img{
+    width: 35px;
+    height: 35px;
+}
+.container{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+.linha-horizontal-menor{
+    background-color: var(--tertiary-color);
+    width: 20vw;
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.segunda-divisao{
+    display: flex;
+    flex-direction: column;
+}
+.filtro-risk{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: #282727;
+    gap: 5px;
+    width: 20vw;
+    height: 3vh;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    border-radius: 25px;    
+    padding: 5px 10px 5px 0px;
+}
+.cinza{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #413F42;
+    border-radius: 25px;    
+    padding: 5px 20px 5px 20px;
+    color: white;
+}
+.terceiro-grafico img{
+    width: 25vw;
+    height: 30vh;
+    margin-right: 100px;
+}
+.linha-horizontal-2{
+    margin-top: 50px;
+    background-color: var(--tertiary-color);
+    width: 80vw;
+    height: 2px;
+}
+.footer{
+    width: 80vw;    
+}
+.titulo-footer{
+    margin-top: 10px;
+    margin-left: 30px;
+    color: white;
+}
+.low{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    margin-left: 50px;
+    color: var(--tertiary-color);
+}
+.borda-low{
+    color: white;
+    background-color: #413F42;
+    border-radius: 25px;    
+    padding: 5px 20px 5px 20px;
+}
+.high{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 28px;
+    color: white;
+}
+.borda-high{
+    color: rgb(0, 0, 0);
+    background-color: var(--quaternary-color);
+    border-radius: 25px;    
+    padding: 5px 20px 5px 20px;
+}
+.barra-do-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vh;
+}
+.barra-do-perfil img{
+    width: 40px;
+    height: 40px;
+}
+.perfil{
+    display: flex;
+    align-items: center;
+
+    width: 8vw;
+}
+.perfil img{
+    width: 60px;
+    height: 60px;
+}
+.linha-horizontal-menor-2{
+    background-color: var(--tertiary-color);
+    width: 15vw;
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container-participants{
+    height: 20vh;
+    padding: 20px;
+}
+.espacamento{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.titulo-notificacao{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.notificacao{
+    display: flex;
+    flex-direction: column;
+    height: 65vh;       
+}
+.mensagens{
+    display: flex;
+    justify-content: center;
+    width: 15vw;
+    height: 30vh;
+    font-size: 12px;
+}
+.deslocamento{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.container-mensagem{
+    display: flex;
+    flex-direction: column;
+    width: 12vw;
+}
+.escrita{
+    display: flex;
+}
+.color3{
+    margin-right: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: #EEC9FF;
+    border-radius: 50%;
+}
+.color4{
+    margin-right: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: #AFAFAF;
+    border-radius: 50%;
+}
+.color5{
+    margin-right: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: #E8FF8A;
+    border-radius: 50%;
+}
+.color6{
+    margin-right: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: var(--secudary-color);
+    border-radius: 50%;
+}
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: #282727;
+    margin: 40px;
+    border-radius: 25px;    
+    padding: 5px 10px 5px 15px;
+    color: white;
+}
+.imagem-mao img{
+   transform: translate(20px, 0px)
+}
+
+/*TABLET*/
+@media (max-width: 1024px){
+    body{
+        padding: 30px;
+    }
+    main{
+        justify-content: space-between;
+    }
+    .sombra{
+         transform: translate(-50%, -180%);
+    }
+    h1{
+         transform: translate(0, -30%);
+    }
+    .container{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 0;
+        gap: 8px;
+    }
+    .descricao p{
+        text-align: center;
+        font-size: 18px;
+    }
+    .pikachu{
+        transform: translate(-45%, -50%);
+    }
+    footer{
+        display: none;
+    }
+}
