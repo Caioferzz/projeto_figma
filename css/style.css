@@ -4,7 +4,6 @@
     --tertiary-color: #7F7A7A;
     --quaternary-color: #E8FF8A;
 }
-
 body {
     background-color: var(--primary-color);
     display: flex;          /*coloca a barra e a linha lado a lado*/
@@ -12,7 +11,6 @@ body {
     width: 100vw; 
     color: white;  
 }
-
 /* barra de ícones */
 .barra-dos-icones {
     display: flex;
@@ -20,7 +18,10 @@ body {
     align-items: center;
     margin-top: 90px;       /*reduz o espaço do topo*/
 }
-
+main{
+    display: block;
+    width: 78vw;
+}
 /*espaçamento do ícone de configuração*/
 .configuracao {
     margin-top: 300px;
@@ -66,19 +67,19 @@ body {
 }
 .data-topo{
     display: flex;
-    margin-left: 50vw;
+    margin-left: 40vw;
     color: white;
 }
 
 .linha-horizontal{
     background-color: var(--tertiary-color);
-    width: 80vw;
+    width: 78vw;
     height: 2px;
 }
 .trend-grafico{
     display: flex;
-    width: 80vw;
-    height: 29vh;
+    width: 70vw;
+    height: 25vh;
     justify-content: space-between;
 }
 
@@ -120,8 +121,8 @@ body {
 .risk-grafico{
     display: flex;
     justify-content: space-between;
-    width: 80vw;
-    height: 35vh;
+    width: 70vw;
+    height: 33vh;
 }
 .primeira-divisao{
     display: flex;
@@ -242,11 +243,11 @@ body {
 .linha-horizontal-2{
     margin-top: 50px;
     background-color: var(--tertiary-color);
-    width: 80vw;
+    width: 78vw;
     height: 2px;
 }
 .footer{
-    width: 80vw;    
+    width: 79vw;    
 }
 .titulo-footer{
     margin-top: 10px;
@@ -302,13 +303,14 @@ body {
 }
 .linha-horizontal-menor-2{
     background-color: var(--tertiary-color);
-    width: 15vw;
+    width: 17vw;
     height: 2px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .container-participants{
-    height: 20vh;
+    height: 15vh;
+    width: 15vw;
     padding: 20px;
 }
 .espacamento{
@@ -340,6 +342,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 12vw;
+    gap: 28px;
 }
 .escrita{
     display: flex;
@@ -384,38 +387,313 @@ body {
     color: white;
 }
 .imagem-mao img{
-   transform: translate(20px, 0px)
+   width: 320px;
+   height: 350px;
 }
 
 /*TABLET*/
 @media (max-width: 1024px){
+    .barra-dos-icones{
+        width: 80px;
+    }
+    .nav div img{
+        width: 20px;
+        height: 20px;
+    }
     body{
-        padding: 30px;
+        width: 100vw;
+        height: 100vh;
     }
     main{
-        justify-content: space-between;
+        height: 100vh;
+        width: 60vw;
     }
-    .sombra{
-         transform: translate(-50%, -180%);
+    .filtro-topo{
+      width: 390px;
+      height: 50px;
+      gap: 0px;
     }
-    h1{
-         transform: translate(0, -30%);
+    .texto-topo{
+        font-size: 10px; 
+        margin-right: 5px;
+    }
+    .primeiro-filtro{
+        width: 120px;
+        height: 20px;
+        gap: 5px;
+    }
+    .primeiro-filtro p{
+        font-size: 12px;
+    }
+    .primeiro-filtro img{
+        width: 15px;
+        height: 15px;
+    }
+    .data-topo{
+        width: 80px;
+        height: 10px;
+        margin-left: 20px;
+        gap: 5px;
+    }
+    .data-topo p{
+        font-size: 12px;
+    }
+    .linha-horizontal{
+        width: 61vw;
+    }
+    .linha-horizontal-2{
+        width: 61vw;
+        margin-top: 120px;
+        margin-bottom: 120px;
+        transform: translate(0px, 100px);
+    }
+    .linha-horizontal-menor-2{
+        width: 27vw;
+    }
+    .trend-grafico{
+        width: 80px;
+        height: 200px;
+    }
+    .titulo-trend{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .primeiro-grafico img{
+        position: absolute;
+        width: 360px;
+        height: 120px;
+    }
+    .filtro-do-grafico{
+        width: 150px;
+        height: 20px;
+        gap: 5px;
+        transform: translate(280px, 0px);
+    }
+    .filtro-do-grafico p{
+        font-size: 10px;
+    }
+    .risk-grafico{
+        width: 440px;
+        height: 350px;
+        flex-direction: column;
+    }
+    .titulo-risk{
+       width: 250px;    
+       margin-left: 1px;
+    }
+     .titulo-risk{
+        font-size: 16px;
+    }
+    .primeira-divisao{
+       width: 430px;
+       height: 200px;
+        margin-bottom: 100px;
+    }
+    .segundo-grafico{
+        display: flex;
+        width: 440px;
+        height: 150px;
+        gap: 20px;
+    }
+    .segundo-grafico img{
+        width: 180px;
+        height: 180px;
+    }
+ 
+    .linha-horizontal-menor{
+        width: 27vw;
+        height: 1px;
+        margin: none;
+    }
+    .porcentagem img{
+        width: 20px;
+        height: 20px;
+    }
+    .porcentagem-2 img{
+        width: 20px;
+        height: 20px;
+    }
+    .segunda-divisao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 440px;
+        height: 200px;
+    }
+    .filtro-risk{
+        width: 170px;
+        height: 20px;
+        gap: 5px;
+    }
+    .filtro-risk{
+        width: 400px;
+        height: 25px;
+    }
+    .filtro-risk p{
+        font-size: 10px;
+
+    }
+    .terceiro-grafico img{
+        transform: translate(-130px, -30px);
+        margin-left: 5px;
+        width: 300px;
+        height: 220px;
+    }
+    .informacao-do-grafico{
+        display: flex;
+        width: 150px;
+        height: 100px;
+        gap: 5px;
+        align-items: center;
+        transform: translate(0,-5px)
     }
     .container{
-        flex-direction: column;
-        height: auto;
+        display: flex;
+        width: 200px;
+        height: 50px;
         align-items: center;
         padding: 0;
         gap: 8px;
+        margin-left: 110px;
+    }
+    .linha-horizontal-menor{
+        width: 220px;
+        height: 1px;
+        margin: auto;
+        border: solid 1px;
+    }
+    .numero-risk{
+        font-size: 25px;
+    }
+    .classficacao{
+        width: 100px;
+        height: 40px;
+        gap: 2px;
+        margin: 10px;
+    }
+    .classficacao p{
+        width: 60px;
+        height: 30px;
+        gap: 10px;
+        font-size: 10px;
+
+    }
+    .classficacao p span{
+        gap: 2px;
+        margin-right: none;
+    }
+    .color1{
+        width: 200px;
+        height: 10px;
+    }
+    .color2{
+        width: 200px;
+        height: 10px;
+    }
+    .terceiro-grafico{
+        width: 30px;
+        height: 60px;
+    }
+    .footer{
+        width: 440px;
+        height: 150px;   
+    }
+    .footer p{
+        font-size: 10px;    
+    }
+    .low{
+        display: flex;
+        height: 25px;
+        margin-left: 10px;
+        gap: 37px;
+    }
+    .high{
+        display: flex;
+        height: 25px;
+        margin-left: 10px;
+        gap: 37px;
+    }
+    h1{
+        transform: translate(0, -30%);
     }
     .descricao p{
         text-align: center;
         font-size: 18px;
     }
-    .pikachu{
-        transform: translate(-45%, -50%);
+    .barra-da-direita{
+        width: 30vw;
+        height: 100vh;
     }
-    footer{
-        display: none;
+    .barra-do-perfil{
+        display: flex;
+        align-items: center;
+        width: 200px;
+    }
+    .barra-do-perfil img{
+        width: 30px;
+        height: 30px;
+    }
+    .barra-do-perfil p{
+        font-size: 14px;
+    }
+    .container-participants{
+        width: 200px;
+        height: 158px;
+    }
+    .container-participants img{
+        width: 100px;
+        height: 30px;
+    }
+    .container-participants p{
+        font-size: 14px;
+    }
+    .container-participants h1{
+        font-size: 18px;
+    }
+    .espacamento p{
+        font-size: 14px;
+    }
+    .notificacao{    
+        width: 200px;
+    }
+    .notificacao h2{
+        font-size: 18px;
+    }
+    .notificacao p{
+        font-size: 14px;
+    }
+    .container-mensagem{
+        gap: 2px;
+    }
+    .mensagens{
+        display: flex;
+        width: 150px;
+        height: 150px;
+        font-size: 10px;   
+    }
+    .escrita{
+        display: flex;
+        width: 150px;
+    }
+    .escrita p{
+        font-size: 14px;
+    }
+    .deslocamento{
+        color: var(--tertiary-color);
+    }
+    .deslocamento p{
+        font-size: 12px;
+    }
+    .botao{
+        width: 150px;
+        height: 30px;
+        gap: 20px;
+        padding: 8px 8px 8px 8px;
+        font-size: 12px;
+    }
+    .imagem-mao img{
+        transform: translate(2px, 90px);
+        width: 220px;
+       height: 240px;
     }
 }
